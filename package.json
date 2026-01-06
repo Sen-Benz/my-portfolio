@@ -1,0 +1,23 @@
+{
+  "name": "benzar-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website showcasing web development, networking, cybersecurity, and AI interests",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 3000 || npx http-server -p 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "web development",
+    "networking",
+    "cybersecurity",
+    "ai"
+  ],
+  "author": "Benzar Neil R. Odavar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/portfolio"
+  }
+}
