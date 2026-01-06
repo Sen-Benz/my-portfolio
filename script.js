@@ -1,3 +1,21 @@
+// Scroll to Top Button
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        scrollTopBtn.classList.add('show');
+    } else {
+        scrollTopBtn.classList.remove('show');
+    }
+});
+
+scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -39,7 +57,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 
     // Simulate API call
     setTimeout(() => {
-        showMessage('Message sent successfully! Thank you for reaching out.', 'success');
+        showMessage('✓ Message sent successfully! Thank you for reaching out. I\'ll get back to you soon.', 'success');
         this.reset();
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
